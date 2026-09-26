@@ -6,53 +6,54 @@ import MaskedTitle from './MaskedTitle';
 const categories = [
   {
     id: '01',
-    tag: 'CORE UI ENGINEERING',
-    title: 'Frontend & UI Craft (Hands-On)',
-    summary: 'Responsive layouts, component structure, clean styling, and high-fidelity user experiences.',
-    telemetry: '80% Proficiency • Pixel Precision',
-    skills: ['HTML5', 'CSS3 Layouts', 'Tailwind CSS', 'Responsive UI', 'JavaScript Basics', 'React Basics']
+    tag: 'FRONTEND DEVELOPMENT',
+    title: 'Frontend & UI Craft',
+    summary: 'Responsive layouts, component architecture, clean styling, and high-fidelity user experiences.',
+    telemetry: 'React • Tailwind CSS • TypeScript',
+    skills: ['HTML5', 'CSS3', 'Tailwind CSS', 'React.js', 'TypeScript', 'Angular', 'SASS']
   },
   {
     id: '02',
-    tag: 'AI-AUGMENTED ENGINEERING',
-    title: 'Generative AI & Prompt Design',
-    summary: 'Architecting precision prompt schemas, directing LLMs for code synthesis, and sub-second streaming.',
-    telemetry: 'Gemini API • Prompt Schemas',
-    skills: ['Prompt Engineering', 'AI-Augmented Coding', 'Google Gemini API', 'Token Streaming', 'Code Synthesis', 'Rapid Sprints']
+    tag: 'BACKEND DEVELOPMENT',
+    title: 'Backend & Server-Side',
+    summary: 'Building robust REST APIs, server-side logic, and scalable backend architectures.',
+    telemetry: 'Node.js • Python • Java',
+    skills: ['Node.js (JavaScript)', 'Python', 'Java (OOP)', 'Express.js', 'REST APIs', 'API Design']
   },
   {
     id: '03',
-    tag: 'SYSTEM ARCHITECTURE',
-    title: 'System Design & Data Flows',
-    summary: 'Decoupled presentation layers, client-server models, RESTful contracts, and WebSocket protocols.',
-    telemetry: 'Decoupled Edge • Sub-85ms TTFB',
-    skills: ['Decoupled Architecture', 'System Design', 'RESTful APIs', 'WebSocket Flows', 'Data Contracts', 'Authentication PKCE']
+    tag: 'DATABASE & STORAGE',
+    title: 'Databases & Data Layers',
+    summary: 'Relational and NoSQL databases, schema design, and efficient data querying patterns.',
+    telemetry: 'SQL • MongoDB • GraphQL',
+    skills: ['SQL', 'NoSQL (MongoDB)', 'GraphQL', 'Database Design', 'ORM Concepts', 'Data Modeling']
   },
   {
     id: '04',
-    tag: 'EDGE & CLOUD RUNTIMES',
-    title: 'Cloud & Edge Deployments',
-    summary: 'Edge-distributed static hosting, continuous deployment, serverless edge workers, and DNS routing.',
-    telemetry: 'Cloudflare Pages • Edge Workers',
-    skills: ['Cloudflare Pages', 'Cloudflare Workers', 'Vercel', 'Git', 'GitHub', 'CI/CD Deployments']
+    tag: 'AI & MACHINE LEARNING',
+    title: 'AI & ML Engineering',
+    summary: 'Machine learning fundamentals, data analysis, and AI-powered application development.',
+    telemetry: 'Python • NumPy • Pandas • ML Models',
+    skills: ['Machine Learning', 'NumPy & Pandas', 'Data Visualization', 'Kaggle Datasets', 'AI Integration', 'Prompt Engineering']
   },
   {
     id: '05',
-    tag: 'FRAMEWORKS DIRECTED WITH AI',
-    title: 'Full-Stack Frameworks',
-    summary: 'Frameworks architected and synthesized using modern AI-assisted engineering workflows.',
-    telemetry: 'AI-Accelerated • Full Stack',
-    skills: ['Next.js', 'Node.js', 'Express.js', 'Socket.io', 'MongoDB Atlas', 'PostgreSQL • Prisma']
+    tag: 'TOOLS & DEVOPS',
+    title: 'Tools & Version Control',
+    summary: 'Professional development workflows, version control, and collaboration using industry tools.',
+    telemetry: 'GitHub • Vercel • Deployment',
+    skills: ['Git & GitHub', 'VS Code', 'Vercel', 'Cloudflare Pages', 'npm / yarn', 'Vite']
   },
   {
     id: '06',
     tag: 'PROBLEM SOLVING CORE',
-    title: 'Programming Foundations',
-    summary: 'Foundational computer science principles, OOP concepts, algorithm basics, and schema comprehension.',
-    telemetry: 'OOP Basics • Schema Design',
-    skills: ['Java (OOP)', 'JavaScript Foundations', 'Python Basics', 'Database Concepts', 'Data Structures Basics']
+    title: 'Algorithms & DSA',
+    summary: 'Data structures, algorithmic thinking, and competitive problem solving using Java & LeetCode.',
+    telemetry: 'Java • DSA • LeetCode',
+    skills: ['Java (OOP)', 'Data Structures', 'Algorithms', 'LeetCode Practice', 'Time Complexity', 'System Design Basics']
   }
 ];
+
 
 export default function Skills() {
   const { playHoverSound, playClickSound } = useAudio();
@@ -160,7 +161,7 @@ export default function Skills() {
     <section id="skills" className="skills-page-section">
       {/* Header */}
       <div className="container gsap-reveal skills-header">
-        <MaskedTitle number="3." text="Core Capabilities" />
+        <MaskedTitle number="3." text="My Skills" />
         <div className="divider" />
       </div>
 

@@ -16,74 +16,74 @@ export default function Timeline() {
   const epochs = [
     {
       epoch: '01',
-      date: 'DEC 2025 – MAR 2026',
+      date: 'SEP 2024 – MAR 2025',
       stageLabel: 'STAGE 01',
-      category: 'THE SPARK',
+      category: 'THE FOUNDATION',
       dockLabel: 'FOUNDATIONS',
-      title: 'Web Foundations & Core Logic',
-      headline: 'HTML5, CSS3 & Programming Basics',
+      title: 'Web Foundations & CS Basics',
+      headline: 'HTML5, CSS3, JavaScript & Java',
       summary:
-        'Started exploring programming logic and web development in December 2025. Mastered core frontend structure with HTML5, CSS3, and modern CSS, while building foundational problem-solving skills in Java, JavaScript, and Python.',
+        'Started my engineering journey at ABES Engineering College in September 2024. Built a solid foundation in web development with HTML5, CSS3, and JavaScript while mastering Java for object-oriented programming and data structures. Explored Python basics and began building my algorithmic problem-solving skills.',
       metrics: [
-        { label: 'Timeline', value: 'Dec 2025 – Mar 2026' },
-        { label: 'Focus', value: 'Web Foundations' },
-        { label: 'Core Tools', value: 'HTML, CSS & Java' }
+        { label: 'Timeline', value: 'Sep 2024 – Mar 2025' },
+        { label: 'College', value: 'ABES Engg. College' },
+        { label: 'Core Tools', value: 'HTML, CSS, Java, JS' }
       ],
-      techStack: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript', 'Java', 'Git'],
+      techStack: ['HTML5', 'CSS3', 'JavaScript', 'Java', 'Python Basics', 'Git'],
       Visualizer: WebArchitectureCanvas
     },
     {
       epoch: '02',
-      date: '2026 • JUNE (5-DAY SPRINT)',
+      date: 'SEP 2025',
       stageLabel: 'STAGE 02',
-      category: 'REAL-TIME SPRINT',
-      dockLabel: '5-DAY SPRINT',
-      title: 'ChatUp: Real-Time Messaging App',
-      headline: 'Architected & Shipped in 5 Days',
+      category: 'FIRST PROJECT SPRINT',
+      dockLabel: 'FIRST PROJECT',
+      title: 'NutroHeist: Food Safety Scanner',
+      headline: 'AI-Powered Ingredient Analysis Web App',
       summary:
-        'Architected and delivered ChatUp in an intensive 5-day build sprint in June 2026. Designed the full-duplex WebSocket architecture and MongoDB schemas, directing AI code generation to implement Socket.io channels with sub-25ms response times.',
+        'Built NutroHeist in September 2025 — a web application that scans packaged food ingredients and determines whether they are safe to eat. Designed a clean, responsive landing page and integrated AI ingredient analysis logic. The project received a fork from the community, validating its real-world utility.',
       metrics: [
-        { label: 'Sprint Speed', value: '5 Days (June 2026)' },
-        { label: 'Latency', value: '< 25ms Ping' },
-        { label: 'Architecture', value: 'Socket.io + MongoDB' }
+        { label: 'Launched', value: 'Sep 2025' },
+        { label: 'Community', value: '1 Fork' },
+        { label: 'Tech', value: 'HTML, CSS, JS' }
       ],
-      techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'JWT'],
+      techStack: ['HTML5', 'CSS3', 'JavaScript', 'AI Integration', 'Responsive Design'],
       Visualizer: ChatUpSocketStreamCanvas
     },
     {
       epoch: '03',
-      date: '2026 • JUNE (3-DAY SPRINT)',
+      date: 'AUG 2026',
       stageLabel: 'STAGE 03',
-      category: 'APPLIED GENAI SPRINT',
-      dockLabel: '3-DAY SPRINT',
-      title: 'Roasting AI: LLM Generator',
-      headline: 'Engineered & Shipped in 3 Days',
+      category: 'SECURITY & AI SPRINT',
+      dockLabel: 'AI SECURITY',
+      title: 'Defensys: AI Cybersecurity System',
+      headline: 'Python-Based AI Defense Platform',
       summary:
-        'Engineered and deployed Roasting AI in a rapid 3-day sprint in June 2026. Structured multi-shot comedic prompt schemas for Google Gemini API, implemented streaming token responses in React, and built resilient fallback logic for instant comedic roasts.',
+        'Engineered Defensys in August 2026 — an AI-powered cybersecurity defense platform built with Python. The system leverages machine learning to detect threats, analyze anomalies, and automate defense responses. Also achieved Semi-Finalist in Smart India Hackathon (SIH) and participated in HackaMania hackathon.',
       metrics: [
-        { label: 'Sprint Speed', value: '3 Days (June 2026)' },
-        { label: 'AI Engine', value: 'Google Gemini API' },
-        { label: 'Stream Speed', value: '< 540ms TTFB' }
+        { label: 'Launched', value: 'Aug 2026' },
+        { label: 'Tech', value: 'Python + AI/ML' },
+        { label: 'Achievement', value: 'SIH Semi-Finalist' }
       ],
-      techStack: ['React.js', 'Node.js', 'Gemini API', '@google/generative-ai', 'Tailwind CSS'],
+      techStack: ['Python', 'Machine Learning', 'AI/ML', 'Cybersecurity', 'Data Analysis', 'Backend APIs'],
       Visualizer: RoastingAITokenStreamCanvas
     },
     {
       epoch: '04',
-      date: '2026 • PRODUCTION SAAS',
+      date: 'AUG 2026 – PRESENT',
       stageLabel: 'STAGE 04',
-      category: 'CLOUD & EDGE SAAS',
-      dockLabel: 'PROD SAAS',
-      title: 'AI Resume Builder & Cloudflare Edge',
-      headline: 'Decoupled Next.js SaaS & OAuth 2.0',
+      category: 'PROFESSIONAL INTERNSHIP',
+      dockLabel: 'INTERNSHIP',
+      title: 'AI Backend Engineer at FlyRank AI',
+      headline: 'Remote Internship • AI-Powered SEO Platform',
       summary:
-        'Architected and shipped an edge-deployed SaaS platform in 2026. Decoupled the Next.js presentation layer on Cloudflare Pages from an Express/PostgreSQL backend API, securing auth via Google OAuth 2.0 PKCE and directing Gemini AI for real-time ATS resume scoring.',
+        'Currently working as an AI Backend Engineer Intern at FlyRank AI. FlyRank is building the autopilot for organic growth — automating how brands appear in both classic and next-gen AI search engines. Applying full-stack and AI skills in a real production environment to deliver scalable backend solutions.',
       metrics: [
-        { label: 'Edge TTFB', value: '< 85ms Latency' },
-        { label: 'Security', value: 'Google OAuth 2.0' },
-        { label: 'Deployment', value: 'Cloudflare Pages' }
+        { label: 'Role', value: 'AI Backend Intern' },
+        { label: 'Company', value: 'FlyRank AI' },
+        { label: 'Mode', value: 'Remote' }
       ],
-      techStack: ['Next.js', 'Cloudflare Pages', 'PostgreSQL', 'Prisma', 'Google OAuth 2.0', 'Express.js'],
+      techStack: ['Node.js', 'Python', 'AI Integration', 'REST APIs', 'Backend Development', 'SEO Automation'],
       Visualizer: EdgeResumeATSParserCanvas
     }
   ];

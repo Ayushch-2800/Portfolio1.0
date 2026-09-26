@@ -9,7 +9,7 @@ export default function useTextScramble(originalText, speed = 30) {
   const trigger = useCallback(() => {
     let iteration = 0;
     clearInterval(intervalRef.current);
-
+    
     intervalRef.current = setInterval(() => {
       setDisplayText(
         originalText

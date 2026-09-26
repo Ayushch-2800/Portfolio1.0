@@ -47,7 +47,7 @@ export default function Contact() {
 
   const handleCopyEmail = () => {
     playClickSound();
-    navigator.clipboard.writeText('itsdinesh036@gmail.com');
+    navigator.clipboard.writeText('ayushchaurasiya2907@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2400);
   };
@@ -396,7 +396,7 @@ export default function Contact() {
             <div className="comms-capsule">
               <div className="comms-channel-info">
                 <span className="comms-tag text-gray">My Email:</span>
-                <span className="comms-email">itsdinesh036@gmail.com</span>
+                <span className="comms-email">ayushchaurasiya2907@gmail.com</span>
               </div>
 
               <button

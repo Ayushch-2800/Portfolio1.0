@@ -3,17 +3,9 @@ import { useMemo, useState } from 'react';
 import ProjectModal from './ProjectModal';
 import MaskedTitle from './MaskedTitle';
 
-import chatup1 from '../assets/chatup-1.webp';
-import chatup2 from '../assets/chatup-2.webp';
-
-import roast1 from '../assets/roast-1.webp';
-import roast2 from '../assets/roast-2.webp';
-import roast3 from '../assets/roast-3.webp';
-
-import resumeMain from '../assets/resume.webp';
-import resume1 from '../assets/resume1.webp';
-import resume2 from '../assets/resume2.webp';
-import resume3 from '../assets/resume3.webp';
+import defensysImg from '../assets/defensys_preview.jpg';
+import nutroheistImg from '../assets/nutroheist_preview.jpg';
+import vidyapulseImg from '../assets/vidyapulse_preview.jpg';
 
 export default function Work() {
   const [activeProjectIndex, setActiveProjectIndex] = useState(null);
@@ -22,134 +14,136 @@ export default function Work() {
     () => [
       {
         bgClass: 'bg-3',
-        shortTitle: 'AI Resume Builder',
-        category: 'SAAS • SYSTEM ARCHITECTURE • AI DIRECTION',
-        tagline: 'AI-Powered Resume Builder & ATS Analyzer',
+        bgImage: defensysImg,
+        shortTitle: 'Defensys',
+        category: 'PYTHON • AI SECURITY • FULL STACK',
+        tagline: 'AI-Powered Cybersecurity Defense System',
         description:
-          'A production-ready SaaS platform that transforms PDFs into ATS-optimized resumes. Architected with a decoupled model combining a Next.js edge frontend on Cloudflare Pages with an Express/PostgreSQL backend, secured by Google OAuth 2.0 and synthesized with AI pair-programming.',
+          'Defensys is an intelligent cybersecurity platform built with Python that leverages AI to detect and respond to security threats in real-time. The system analyzes network behavior, identifies anomalies, and provides actionable defense insights — combining full-stack architecture with smart threat intelligence.',
         problem:
-          'Opaque Applicant Tracking Systems (ATS) reject up to 75% of qualified resumes due to parsing mismatches. Job seekers face manual reformatting and lack real-time algorithmic guidance on keyword resonance.',
+          'Modern organizations struggle with identifying and responding to evolving cybersecurity threats in real-time. Manual monitoring is error-prone, slow, and unable to scale against sophisticated attack vectors.',
         solution:
-          'Architected an edge-deployed SaaS application combining Next.js, Cloudflare Pages, and Google Gemini API. Structured the PDF parsing pipeline, semantic ATS scoring algorithms, and directed AI co-pilots to build the production codebase.',
+          'Built Defensys as an AI-driven defense platform using Python to automate threat detection, behavioral analysis, and response workflows. The system provides an intelligent security layer that reduces response time and human effort significantly.',
         techStack: [
-          'Next.js',
-          'Express',
-          'PostgreSQL',
-          'Prisma',
-          'Google OAuth',
-          'Gemini API',
-          'Cloudflare Pages'
+          'Python',
+          'AI/ML',
+          'Cybersecurity',
+          'REST APIs',
+          'Data Analysis',
+          'Backend Architecture'
         ],
         features: [
-          'PDF parsing & ATS optimization',
-          'Decoupled Next.js edge frontend',
-          'Secure Google OAuth 2.0 & JWTs',
-          'Gemini AI resume enhancement'
+          'Real-time threat detection',
+          'AI-powered anomaly analysis',
+          'Automated defense workflows',
+          'Security insights dashboard'
         ],
         architectureFlow: [
-          { step: '01', title: 'Edge Client', tech: 'Next.js • Cloudflare', desc: 'Static edge routing & sub-85ms asset delivery' },
-          { step: '02', title: 'Auth Gateway', tech: 'Google OAuth 2.0', desc: 'PKCE authentication with encrypted session JWTs' },
-          { step: '03', title: 'API Microservice', tech: 'Node.js • Express', desc: 'Secure PDF parsing, rate-limiting & schema validation' },
-          { step: '04', title: 'Intelligence & Store', tech: 'Gemini Flash • PostgreSQL', desc: 'Real-time ATS scoring & Prisma connection pooling' },
+          { step: '01', title: 'Data Ingestion', tech: 'Python • System APIs', desc: 'Continuous network and system event data collection' },
+          { step: '02', title: 'AI Analysis Engine', tech: 'ML Models • Python', desc: 'Behavioral anomaly detection and threat classification' },
+          { step: '03', title: 'Defense Orchestrator', tech: 'Python Backend', desc: 'Automated response protocols and alert generation' },
+          { step: '04', title: 'Insights Dashboard', tech: 'Full Stack UI', desc: 'Real-time security metrics and visualization' },
         ],
         architectureDetails: [
-          { title: 'Decoupled Edge Performance', desc: 'Separated the presentation layer on Cloudflare Pages from the compute-intensive PDF parser, ensuring lightning-fast initial page loads and global low latency.' },
-          { title: 'Deterministic AI Prompting', desc: 'Engineered strict JSON schema prompts for Google Gemini API to eliminate hallucinations and extract structured resume data consistently.' },
-          { title: 'Enterprise Data Security', desc: 'Zero persistence of raw resumes; resumes are parsed in memory, scored, and returned with HTTP-only cryptographic session cookies.' },
+          { title: 'AI-Driven Threat Detection', desc: 'Machine learning models analyze patterns in system and network data to detect security anomalies that rule-based systems miss.' },
+          { title: 'Automated Defense Response', desc: 'Once a threat is detected, the system automatically triggers pre-configured defense workflows to minimize damage.' },
+          { title: 'Comprehensive Security Coverage', desc: 'Monitors multiple attack vectors simultaneously, providing holistic protection across the entire system surface.' },
         ],
         metrics: [
-          { label: 'Edge TTFB', value: '< 85ms' },
-          { label: 'ATS Match Accuracy', value: '98.6%' },
-          { label: 'Avg AI Stream Time', value: '1.2s' },
-          { label: 'Security Standard', value: 'OAuth 2.0' },
+          { label: 'Language', value: 'Python' },
+          { label: 'Type', value: 'AI Security' },
+          { label: 'Detection', value: 'Real-Time' },
+          { label: 'Architecture', value: 'Full Stack' },
         ],
-        title: 'AI Resume Builder',
-        images: [resumeMain, resume1, resume2, resume3],
-        githubUrl: 'https://github.com/DineshS36/resume-analyser',
-        liveDemoUrl: 'https://resume-analyser.pages.dev',
-        exploreUrl: 'https://resume-analyser.pages.dev'
+        title: 'Defensys',
+        images: [defensysImg],
+        githubUrl: 'https://github.com/Ayushch-2800/Defensys',
+        liveDemoUrl: 'https://github.com/Ayushch-2800/Defensys',
+        exploreUrl: 'https://github.com/Ayushch-2800/Defensys'
       },
       {
         bgClass: 'bg-1',
-        shortTitle: 'ChatUp',
-        category: 'REAL-TIME ARCHITECTURE • FULL STACK',
-        tagline: 'Real-Time Web Chat Application',
+        bgImage: nutroheistImg,
+        shortTitle: 'NutroHeist',
+        category: 'WEB APP • AI SCANNER • HEALTH TECH',
+        tagline: 'AI-Powered Food Ingredient Safety Scanner',
         description:
-          'A modern real-time chatting platform built on full-duplex WebSocket channels. Designed the event-driven system architecture and MongoDB schemas, guiding AI code synthesis to deliver instantaneous messaging with sub-25ms response times.',
+          'NutroHeist is a smart landing page and web application that scans the ingredients of packaged food products and instantly tells you whether it\'s safe to eat. Upload or enter ingredient labels and get an AI-driven safety analysis with health insights and recommendations.',
         problem:
-          'Standard HTTP polling solutions generate heavy server traffic and cause delayed message delivery, breaking conversational fluidity and draining mobile device batteries.',
+          'Most people cannot decode the complex chemical names and additives listed on packaged food labels. Harmful ingredients go unnoticed, impacting long-term health without consumers being aware.',
         solution:
-          'Designed a full-duplex WebSocket communication engine with Socket.io and Express.js, architecting optimistic UI rendering, automatic connection heartbeat recovery, and persistent MongoDB chat storage.',
-        techStack: ['React', 'Node.js', 'Express.js', 'Socket.io', 'MongoDB'],
+          'Built NutroHeist as an intuitive web application where users can scan or input food ingredient lists and instantly receive safety scores, flagged ingredients, and health impact summaries powered by AI.',
+        techStack: ['HTML5', 'CSS3', 'JavaScript', 'AI Integration', 'Ingredient Analysis'],
         features: [
-          'Real-time messaging',
-          'Responsive interface',
-          'Fast communication',
-          'Modern chat experience'
+          'Ingredient scanning & analysis',
+          'Safety score generation',
+          'Harmful ingredient detection',
+          'Clean, responsive landing page'
         ],
         architectureFlow: [
-          { step: '01', title: 'Reactive Client', tech: 'React • State Sync', desc: 'Instant optimistic UI updates with zero input lag' },
-          { step: '02', title: 'WebSocket Gateway', tech: 'Socket.io Cluster', desc: 'Full-duplex bidirectional channels with heartbeats' },
-          { step: '03', title: 'Event Broker', tech: 'Node.js • Express API', desc: 'Token-based socket authentication & handshake validation' },
-          { step: '04', title: 'Persistent History', tech: 'MongoDB Atlas', desc: 'Indexed conversation threads & compound sorting' },
+          { step: '01', title: 'Input Interface', tech: 'HTML • CSS • JS', desc: 'Clean landing page with ingredient input or scan form' },
+          { step: '02', title: 'Analysis Engine', tech: 'AI Integration', desc: 'Parses and cross-references ingredients against safety databases' },
+          { step: '03', title: 'Safety Scoring', tech: 'Logic Layer', desc: 'Computes health safety score and flags harmful compounds' },
+          { step: '04', title: 'Results Display', tech: 'Responsive UI', desc: 'Visual safety report with explanations and recommendations' },
         ],
         architectureDetails: [
-          { title: 'Full-Duplex Socket Engine', desc: 'Implemented bi-directional event transport that reduces server CPU load by 80% compared to traditional long-polling.' },
-          { title: 'Optimistic UI Pipeline', desc: 'Messages render instantly in the client interface before server confirmation, with rollback handlers on network interruption.' },
-          { title: 'Resilient Connection State', desc: 'Configured exponential backoff re-connection protocols for seamless message catch-up across dropped mobile connections.' },
+          { title: 'Smart Ingredient Parsing', desc: 'Intelligently breaks down complex ingredient lists, identifying chemical names and additives that pose health risks.' },
+          { title: 'Safety Database Cross-Reference', desc: 'Maps each ingredient against a comprehensive database of flagged, banned, or harmful food additives.' },
+          { title: 'User-Friendly Results', desc: 'Presents complex safety information in a simple, color-coded format that anyone can instantly understand.' },
         ],
         metrics: [
-          { label: 'Socket Ping', value: '< 25ms' },
-          { label: 'Delivery Guarantee', value: '99.99%' },
-          { label: 'Re-connect Time', value: '< 400ms' },
-          { label: 'Data Protocol', value: 'WebSockets' },
+          { label: 'Language', value: 'CSS / HTML / JS' },
+          { label: 'Type', value: 'Health Tech' },
+          { label: 'Analysis', value: 'AI-Powered' },
+          { label: 'Interface', value: 'Responsive' },
         ],
-        title: 'ChatUp',
-        images: [chatup1, chatup2],
-        githubUrl: 'https://github.com/DineshS36/chatup',
-        liveDemoUrl: 'https://chatup-phi.vercel.app',
-        exploreUrl: 'https://chatup-phi.vercel.app'
+        title: 'NutroHeist',
+        images: [nutroheistImg],
+        githubUrl: 'https://github.com/Ayushch-2800/NutroHeist',
+        liveDemoUrl: 'https://github.com/Ayushch-2800/NutroHeist',
+        exploreUrl: 'https://github.com/Ayushch-2800/NutroHeist'
       },
       {
         bgClass: 'bg-2',
-        shortTitle: 'AI Roast Generator',
-        category: 'APPLIED GENAI • PROMPT ARCHITECTURE',
-        tagline: 'AI-Powered Roast Generator',
+        bgImage: vidyapulseImg,
+        shortTitle: 'VidyaPulse AI',
+        category: 'AI EDUCATION • FULL STACK • GENERATIVE AI',
+        tagline: 'AI-Powered Intelligent Education Platform',
         description:
-          'An interactive AI web application demonstrating precision prompt engineering and sub-second token streaming. Architected multi-shot persona prompts and structured client-side stream rendering using Google Gemini API.',
+          'VidyaPulse AI is an intelligent education platform designed to transform the way students learn. Powered by generative AI, it creates personalized learning experiences, generates quizzes, explains complex topics, and tracks student progress — making quality education accessible and adaptive.',
         problem:
-          'Standard LLM prompts generate generic, sterile humor. Achieving sharp, dynamic, context-aware satire requires precise multi-shot system prompt framing, input sanitization, and sub-second token streaming.',
+          'Traditional education systems follow a one-size-fits-all approach, leaving students behind when they need personalized support. There is no scalable way to provide individualized tutoring to every student.',
         solution:
-          'Architected an interactive AI web experience leveraging Gemini API with dynamic few-shot system prompts, personality archetype switching, and low-latency token streaming for high-impact comedic punchlines.',
-        techStack: ['React', 'Node.js', 'Gemini API'],
+          'Built VidyaPulse AI as a generative AI-powered education platform that adapts to each student\'s learning pace, generates dynamic content, and provides instant, intelligent explanations across all subjects.',
+        techStack: ['React', 'Node.js', 'Generative AI', 'Full Stack', 'Education Tech'],
         features: [
-          'AI-generated responses',
-          'Prompt engineering',
-          'Instant roast generation',
-          'Interactive UI'
+          'AI-generated personalized content',
+          'Interactive quiz generation',
+          'Smart concept explanations',
+          'Student progress tracking'
         ],
         architectureFlow: [
-          { step: '01', title: 'Kinetic Client', tech: 'React • Glassmorphism', desc: 'Vibrant interactive prompt interface with real-time feedback' },
-          { step: '02', title: 'Prompt Sanitizer', tech: 'Edge Middleware', desc: 'Input validation and content moderation checks' },
-          { step: '03', title: 'Humor Engine', tech: 'Google Gemini API', desc: 'Dynamic few-shot system prompt framing with archetype tuning' },
-          { step: '04', title: 'Stream Renderer', tech: 'Chunked Stream', desc: 'Sub-second token delivery with kinetic text typing effects' },
+          { step: '01', title: 'Student Portal', tech: 'React Frontend', desc: 'Intuitive learning interface with personalized dashboards' },
+          { step: '02', title: 'AI Content Engine', tech: 'Generative AI', desc: 'Dynamic quiz, explanation, and content generation' },
+          { step: '03', title: 'Learning API', tech: 'Node.js Backend', desc: 'Content serving, progress tracking, and analytics' },
+          { step: '04', title: 'Progress Analytics', tech: 'Data Layer', desc: 'Student performance insights and adaptive recommendations' },
         ],
         architectureDetails: [
-          { title: 'Multi-Shot Prompt Framing', desc: 'Curated specialized comedic personas with tailored few-shot exemplars to produce razor-sharp humor consistently.' },
-          { title: 'Sub-Second Streaming', desc: 'Configured streaming token endpoints to eliminate loading spinners and deliver punchlines character by character.' },
-          { title: 'Zero Cold-Start Latency', desc: 'Deployed on lightweight serverless edge infrastructure ensuring instantaneous response times.' },
+          { title: 'Personalized AI Learning', desc: 'Generative AI adapts content difficulty and style based on each student\'s performance history and learning patterns.' },
+          { title: 'Dynamic Content Generation', desc: 'Instantly creates fresh quizzes, examples, and explanations rather than relying on static content libraries.' },
+          { title: 'Progress-Driven Adaptation', desc: 'Continuously tracks student progress and adjusts learning pathways to target gaps and reinforce strengths.' },
         ],
         metrics: [
-          { label: 'First Token Latency', value: '< 620ms' },
-          { label: 'Humor Archetypes', value: '8 Modes' },
-          { label: 'Context Hit Rate', value: '100%' },
-          { label: 'FPS Performance', value: '60 FPS' },
+          { label: 'Type', value: 'Ed-Tech AI' },
+          { label: 'AI Engine', value: 'Generative AI' },
+          { label: 'Stack', value: 'Full Stack' },
+          { label: 'Focus', value: 'Personalization' },
         ],
-        title: 'AI Roast Generator',
-        images: [roast1, roast2, roast3],
-        githubUrl: 'https://github.com/DineshS36/Roasting_AI',
-        liveDemoUrl: 'https://roasting-ai.pages.dev',
-        exploreUrl: 'https://roasting-ai.pages.dev'
+        title: 'VidyaPulse AI',
+        images: [vidyapulseImg],
+        githubUrl: 'https://github.com/Ayushch-2800/VidyaPulse-AI',
+        liveDemoUrl: 'https://github.com/Ayushch-2800/VidyaPulse-AI',
+        exploreUrl: 'https://github.com/Ayushch-2800/VidyaPulse-AI'
       }
     ],
     []
@@ -177,7 +171,15 @@ export default function Work() {
             }}
             aria-label={`Open project: ${proj.title}`}
           >
-            <div className={`project-bg ${proj.bgClass}`} />
+            {/* Real project image as background */}
+            <div
+              className="project-bg"
+              style={{
+                backgroundImage: `url(${proj.bgImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center top',
+              }}
+            />
             <div className="project-overlay" />
             <div className="project-info">
               <p className="font-mono project-category text-gray uppercase">{proj.category}</p>

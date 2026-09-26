@@ -103,7 +103,7 @@ function devEmailApiPlugin() {
                   <div class="field-label">Message Payload</div>
                   <div class="message-box">${safeMessage}</div>
                   <div class="footer">
-                    Dispatched from Dinesh Portfolio Beacon • ${new Date().toUTCString()}
+                    Dispatched from Ayush Chaurasiya Portfolio Beacon • ${new Date().toUTCString()}
                   </div>
                 </div>
               </body>
@@ -112,7 +112,7 @@ function devEmailApiPlugin() {
 
             const emailPayload = {
               from: 'Portfolio Contact <onboarding@resend.dev>',
-              to: ['itsdinesh036@gmail.com'],
+              to: ['ayushchaurasiya2907@gmail.com'],
               subject: `[Portfolio Inquiry] ${senderName.trim()}`,
               html: emailHtml,
               text: `Name: ${senderName}\nEmail: ${cleanEmail || 'Not provided'}\n\nMessage:\n${senderMessage}`,

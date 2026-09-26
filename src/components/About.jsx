@@ -1,4 +1,4 @@
-import dineshPhoto from '../assets/MYphoto.jpeg';
+import ayushPhoto from '../assets/AyushPhoto.jpg';
 import EngineeringTelemetry from './EngineeringTelemetry';
 import Timeline from './Timeline';
 import MaskedTitle from './MaskedTitle';
@@ -13,21 +13,21 @@ export default function About() {
             <MaskedTitle number="1." text="About Me" />
             <div className="divider" />
             <p className="text-gray about-text">
-              I’m Dinesh, an AI-Native Full Stack Developer and 4th-year AIML student specializing in architecture-driven, AI-augmented engineering. Rather than spending weeks writing boilerplate code by hand, I operate at the architectural level: designing decoupled system flows, data schemas, API contracts, and responsive UI layouts with HTML, CSS, and Tailwind. By directing generative AI as an engineering co-pilot, I synthesize, debug, and deploy production-ready cloud applications to Cloudflare Pages and Vercel at rapid sprint velocities.
+              I'm Ayush Chaurasiya, a Full Stack Developer and 3rd-year CSE (AIML) student at ABES Engineering College, Ghaziabad. I build interactive, production-ready web applications using modern frontend and backend technologies. From designing scalable REST APIs and clean UI layouts with React and Tailwind, to leveraging AI tools like Claude to accelerate development — I operate across the full stack. I'm passionate about clean API design, algorithmic problem solving, and building efficient software systems that make a real difference.
             </p>
             <div className="font-mono text-gray skill-list text-sm">
-              <p><span style={{ color: '#fff' }}></span> System Architecture & Data Flows</p>
-              <p><span style={{ color: '#fff' }}></span> AI-Augmented Code Synthesis & Prompting</p>
-              <p><span style={{ color: '#fff' }}></span> UI Layout Craft (HTML, CSS, Tailwind)</p>
-              <p><span style={{ color: '#fff' }}></span> Cloud & Edge Deployments (Cloudflare & Vercel)</p>
+              <p><span style={{ color: '#fff' }}></span> Full Stack Web Development (React, Node.js)</p>
+              <p><span style={{ color: '#fff' }}></span> AI-Powered Application Development</p>
+              <p><span style={{ color: '#fff' }}></span> Data Structures & Algorithms (Java)</p>
+              <p><span style={{ color: '#fff' }}></span> Cloud Deployments & RESTful API Design</p>
             </div>
           </div>
 
           <div className="abstract-box hoverable gsap-reveal">
             <div className="about-photo-wrapper">
               <img
-                src={dineshPhoto}
-                alt="Dinesh - Full Stack Developer & AI Engineer"
+                src={ayushPhoto}
+                alt="Ayush Chaurasiya - Full Stack Developer & AIML Student"
                 className="about-photo-img"
                 loading="eager"
               />
