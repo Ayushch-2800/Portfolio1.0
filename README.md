@@ -9,7 +9,7 @@
 
 A high-performance, creative agency-grade developer portfolio architected with **React 19**, custom **WebGL GLSL shaders**, **GSAP ScrollTrigger**, and smooth momentum physics. Deployed globally to **Cloudflare Workers** with edge-native serverless microservices.
 
-**Live Production URL:** [https://ayush-portfolio.pages.dev](https://ayush-portfolio.pages.dev)
+**Live Production URL:** [https://ayush-portfolio.ayushchaurasiya2907.workers.dev/](https://ayush-portfolio.ayushchaurasiya2907.workers.dev/)
 
 ---
 
