@@ -1,4 +1,4 @@
-# Dinesh — AI-Native Full Stack Developer & System Architect Portfolio
+# Ayush Chaurasiya — Full Stack Developer & AIML Student Portfolio
 
 [![React 19](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite 8](https://img.shields.io/badge/Vite-8.0_(Rolldown)-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
@@ -9,7 +9,7 @@
 
 A high-performance, creative agency-grade developer portfolio architected with **React 19**, custom **WebGL GLSL shaders**, **GSAP ScrollTrigger**, and smooth momentum physics. Deployed globally to **Cloudflare Workers** with edge-native serverless microservices.
 
-**Live Production URL:** [https://dinesh-portfolio.pages.dev](https://dinesh-portfolio.pages.dev)
+**Live Production URL:** [https://ayush-portfolio.pages.dev](https://ayush-portfolio.pages.dev)
 
 ---
 
@@ -100,18 +100,19 @@ A glassmorphic transmission transponder equipped with dynamic input signal integ
 ```text
 portfolio/
 ├── dist/                          # Production build output
-├── functions/                     # Legacy Cloudflare Pages Functions (if needed)
+├── functions/                     # Cloudflare Pages Functions
 ├── public/                        # Static edge assets
 │   ├── screenshots/               # High-res UI documentation screenshots
-│   ├── Dinesh_Resume.pdf          # Professional resume
+│   ├── Ayush_Resume.pdf           # Professional resume — Ayush Chaurasiya
 │   ├── favicon.svg                # Vector brand favicon
 │   └── og-image.jpg               # OpenGraph social share card
 ├── src/
 │   ├── assets/                    # Optimized WebP project mockups & portrait
+│   │   └── AyushPhoto.jpg         # Profile photo — Ayush Chaurasiya
 │   ├── components/
 │   │   ├── About.jsx              # Bio & telemetry section container
 │   │   ├── Contact.jsx            # Cosmic monolith form & flight arena
-│   │   ├── CustomCursor.jsx       # Hardware-accelerated lunar phase cursor
+│   │   ├── CustomCursor.jsx       # Galaxy cursor — orbital ring + star trail
 │   │   ├── EngineeringTelemetry.jsx# 3-Column live profile & project activity
 │   │   ├── Footer.jsx             # Text-scramble social command deck
 │   │   ├── Hero.jsx               # Typography & wireframe globe trigger
@@ -160,8 +161,8 @@ portfolio/
 Clone the repository and install project dependencies:
 
 ```bash
-git clone https://github.com/DineshS36/Portfolio-.git
-cd Portfolio-
+git clone https://github.com/Ayushch-2800/Portfolio1.0.git
+cd Portfolio1.0
 npm install
 ```
 
@@ -216,19 +217,19 @@ npm run secret:resend
 
 ---
 
-## 👨‍💻 Author & Engineering Channels
+## 👨‍💻 Author & Contact
 
-**Dinesh S**  
-*AI-Native Full Stack Developer & 4th-Year AIML Student*
+**Ayush Chaurasiya**  
+*Full Stack Developer & 3rd-Year CSE (AIML) Student — ABES Engineering College, Ghaziabad*
 
-- **Live Portfolio:** [dinesh-portfolio.pages.dev](https://dinesh-portfolio.pages.dev)
-- **GitHub:** [@DineshS36](https://github.com/DineshS36)
-- **LinkedIn:** [dinesh-s-173698390](https://www.linkedin.com/in/dinesh-s-173698390)
-- **WhatsApp:** [+91 93453 80487](https://wa.me/919345380487?text=Hi%20Dinesh,%20saw%20your%20portfolio%20and%20wanted%20to%20connect!)
-- **Direct Email:** [itsdinesh036@gmail.com](mailto:itsdinesh036@gmail.com)
+- **Live Portfolio:** [ayush-portfolio.pages.dev](https://ayush-portfolio.pages.dev)
+- **GitHub:** [@Ayushch-2800](https://github.com/Ayushch-2800)
+- **LinkedIn:** [ayush-chaurasiya-979004308](https://linkedin.com/in/ayush-chaurasiya-979004308/)
+- **WhatsApp:** [+91 83187 81001](https://wa.me/918318781001?text=Hi%20Ayush,%20saw%20your%20portfolio%20and%20wanted%20to%20connect!)
+- **Direct Email:** [ayushchaurasiya2907@gmail.com](mailto:ayushchaurasiya2907@gmail.com)
 
 ---
 
 <div align="center">
-  <sub>© 2026 Dinesh. Designed with architectural precision and creative excellence.</sub>
+  <sub>© 2026 Ayush Chaurasiya. Built with React, Three.js, GSAP & Cloudflare Workers.</sub>
 </div>
